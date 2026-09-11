@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CI/CD Testing</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="grain"></div>
+
+      <section class="hero">
+        <p class="kicker">pranavawasarmol.in</p>
+        <h1>This page shipped<br />itself</h1>
+        <p class="lede">
+          Every push  <span class="mono">main</span> runs through a pipeline
+          that builds, copies, and reloads this exact file on a server in the
+          cloud &mdash; no manual upload, no SSH session, no waiting.
+        </p>
+      </section>
+
+      <section class="panel" aria-label="deployment status">
+        <div class="panel-row">
+          <span class="dot"></span>
+          <span class="panel-label">status</span>
+          <span class="panel-value">live</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">source</span>
+          <span class="panel-value mono">github.com/&lt;you&gt;/site-demo</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">pipeline</span>
+          <span class="panel-value mono">.github/workflows/deploy.yml</span>
+        </div>
+        <div class="panel-row">
+          <span class="panel-label">served by</span>
+          <span class="panel-value mono"
+            >nginx &middot; ubuntu &middot; ec2</span
+          >
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>Edit this file, commit, push. Then refresh.</p>
+      </footer>
+    </main>
+  </body>
+</html>
